@@ -19,45 +19,57 @@ const LogIn= ()=>{
 
       <div>
         {logToggle?        
-<section className="vh-100" style={{backgrondColor: "#508bfc"}}>
-  <div className="container py-5 h-100">
-    <div className="row d-flex justify-content-center align-items-center h-100">
-      <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div className="card shadow-2-strong" style={{borderRadius:"1rem"}}>
-          <div className="card-body p-5 text-center">
+  <section className="vh-100 ">
+  <div className="container  py-5 h-100"> 
+      <div className="row d-flex justify-content-center align-items-center h-100">
+           <div className="col col-xl-10">
+               <div className="card" style={{borderRadius: "1rem"}}>
+                   <div className="row g-0" style={{position:"relative"}}>
+                      <div className="col-md-6 col-lg-5 d-none d-md-block">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp" alt="login form" className="img-fluid" style={{borderRadius: "1rem 0 0 1rem"}} />
+                      </div> 
+                      <div className="col-md-6 col-lg-7 d-flex align-items-center">
+                          <div className="card-body p-4 p-lg-5 text-black">
 
-            <h3 className="mb-5">Sign in</h3>
-
-            <div className="form-outline mb-4">
-              <input type="email" id="typeEmailX-2" className="form-control form-control-lg" />
-              <label className="form-label" for="typeEmailX-2">Email</label>
-            </div>
-
-            <div className="form-outline mb-4">
-              <input type="password" id="typePasswordX-2" className="form-control form-control-lg" />
-              <label className="form-label" for="typePasswordX-2">Password</label>
-            </div>
-
-         
-            <div className="form-check d-flex justify-content-start mb-4">
-              <input className="form-check-input" type="checkbox" value="" id="form1Example3" />
-              <label className="form-check-label" for="form1Example3"> Remember password </label>
-            </div>
-
-            <button className="btn btn-primary btn-lg btn-block mx-4" type="submit">Login</button>
-            <button className="btn btn-primary btn-lg btn-block mx-4" type="submit" onClick={()=>signIn()}>SignUp</button>
-
-            <hr className="my-4"/>
-
-            <button className="btn btn-lg btn-block btn-primary mb-4" style={{backgroundColr: "#dd4b39"}}
-              type="submit"><i className="fab fa-google me-2"></i> Sign in with google</button>
-            <button className="btn btn-lg btn-block btn-primary mb-2" style={{backgroundColr: "#3b5998"}}
-              type="submit"><i className="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
-
+                              <form>
+                                  <div className="d-flex align-items-center mb-3 pb-1">
+                                      <i className="fas fa-cubes fa-2x me-3" style={{color: "#ff6219"}}></i>
+                                      <span className="h1 fw-bold mb-0">Logo</span>
+                                  </div>
+                                  <h5 className="fw-normal mb-3 pb-3" style={{letterSpacing: "1px"}}>Sign into your account</h5>
+                                  <div className="form-outline mb-5">
+                                      <input type="text" id="form2Example17" className="form-control form-control-lg" name="username" placeholder="E-mail" />
+                                      
+                                  </div>
+                                  <div className="form-outline mb-4">
+                                      <input type="password" id="form2Example27" name="password" className="form-control form-control-lg" placeholder="Password" />
+                                          
+                                  </div> 
+                                  <div className="pt-1 mb-2">
+                                      <button className="btn btn-dark btn-lg btn-block bg-indigo" style={{width:"100%", border:"none"}} type="submit">Login</button>
+                                          </div>
+                                              <a className="small text-muted" href="#!">Forgot password?</a>
+                                              <div className="my-4 d-flex justify-content-center" style={{textAlign:"center", width:"100%",position:"relative"}}>
+                                                  <button className="btn btn-dark btn-sm btn-block bg-white mx-3 px-2 d-flex"
+                                                   style={{color:"black", justifyContent:"center"}}>
+                                                      <i className="bx bxl-google mx-1 fs-3" style={{color:"red"}}></i> Google
+                                                  </button>
+                                                  <button className="btn btn-dark btn-sm btn-block bg-white mx-3 px-2 d-flex"
+                                                   style={{color:"black", justifyContent:"center"}}>
+                                                      <i className="bx bxl-facebook fs-3" style={{color:"blue", position:"relative"}}></i>Facebook
+                                                  </button>
+                                              </div>
+                                                  <p className="mb-5 pb-lg-2" style={{color: "#393f81"}}>Don't have an account?
+                                                      <a href="#!" style={{color: "#393f81"}}  onClick={()=>signIn()}>Register here</a>
+                                                  </p>
+                                                 
+                              </form>
+                          </div> 
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
 </section>
 :
